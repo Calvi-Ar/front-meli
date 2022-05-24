@@ -1,15 +1,15 @@
 
 import { Container, Stack, Box,Input,Icon, Img, Text, StackDivider, Divider, Button } from '@chakra-ui/react'
-import { AiOutlineSearch, AiOutlineShoppingCart, AiFillPlusCircle, AiOutlineCar, AiFillGithub, AiFillLinkedin } from "react-icons/Ai";
-import { GoLocation, } from "react-icons/go";
-import { GiShakingHands, GiSmartphone, GiOldMicrophone, GiSoccerBall, GiModernCity,GiSteeringWheel,GiLipstick, GiTakeMyMoney } from "react-icons/Gi";
-import { MdOutlineQrCode2, MdChair } from "react-icons/Md";
-import { CgScreen, CgSmartHomeRefrigerator } from "react-icons/Cg";
+import { AiOutlineSearch, AiOutlineShoppingCart, AiFillPlusCircle, AiOutlineCar, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { GoLocation} from "react-icons/go";
+import { GiShakingHands, GiSmartphone, GiOldMicrophone, GiSoccerBall, GiModernCity,GiSteeringWheel,GiLipstick, GiTakeMyMoney } from "react-icons/gi";
+import { MdOutlineQrCode2, MdChair } from "react-icons/md";
+import { CgScreen, CgSmartHomeRefrigerator } from "react-icons/cg";
 import {IoShirtOutline, IoStar} from "react-icons/io5";
 import {BiJoystick, BiCookie} from "react-icons/bi";
-import {RiBearSmileLine, RiMickeyFill} from "react-icons/Ri";
-import {FaPlay, FaHandHoldingUsd, FaHandshake} from "react-icons/Fa";
-import {BsFillCreditCard2BackFill, BsFillCreditCard2FrontFill} from "react-icons/Bs";
+import {RiBearSmileLine, RiMickeyFill} from "react-icons/ri";
+import {FaPlay, FaHandHoldingUsd, FaHandshake} from "react-icons/fa";
+import {BsFillCreditCard2BackFill, BsFillCreditCard2FrontFill} from "react-icons/bs";
 
 
 
