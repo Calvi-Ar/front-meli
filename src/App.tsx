@@ -40,7 +40,7 @@ function App() {
             <Stack>
               <Stack direction="row"  marginRight={65}>
                 <Stack direction="row" spacing={9} flex={1} >
-                  <Box borderRadius={100} width={49} height={41} backgroundColor="blue.700" align="center" verticalAlign="center">
+                  <Box borderRadius={100} width={49} height={41} backgroundColor="blue.700" display="flex" justifyContent="center"  >
                   <Icon borderRadius={100} backgroundColor="#FFF555" width={10} height={10} color="blackAlpha.500" as={FaHandshake} ></Icon>
                   </Box>
                   <Stack spacing={-2} alignItems="center">
@@ -102,7 +102,7 @@ function App() {
 
         <Container alignSelf="center" maxWidth="container.xl" padding={0} backgroundColor="blackAlpha.200" paddingBlock={6}>
           <Stack align="center"  maxWidth="Stack.xl">
-          <Img height="350px" Width="1200px"  src={banner}></Img>
+          <Img height="350px" width="1200px"  src={banner}></Img>
           </Stack>
 
           <Box backgroundColor="white"  borderRadius={10} margin={10} height={100}>
@@ -154,10 +154,10 @@ function App() {
               <Text fontSize={15} color="blue.500">Ver todas</Text>
             </Stack>
 
-            <Stack direction="row" spacing={5} a justifyContent="center" marginTop={14} padding={4}>
+            <Stack direction="row" spacing={5}  justifyContent="center" marginTop={14} padding={4}>
 
               <Box backgroundColor="white" width={224} height={330}>
-                <Img padding={5} Width="221px" src={celu}></Img>
+                <Img padding={5} width="221px" src={celu}></Img>
                 <Divider />
                 <Stack direction="row" justifyContent="center" alignItems="center" padding={2}>
                   <Text color="blackAlpha.800" fontSize={25}>$2.689</Text>
@@ -165,7 +165,7 @@ function App() {
                 </Stack>
               </Box>
               <Box backgroundColor="white" width={224} height={330}>
-                <Img padding={5} paddingBottom={24} Width="221px" src={tablet}></Img>
+                <Img padding={5} paddingBottom={24} width="221px" src={tablet}></Img>
                 <Divider/>
                 <Stack alignItems="center">
                 <Stack direction="row" justifyContent="center" alignItems="center" padding={2}>
@@ -178,7 +178,7 @@ function App() {
                 </Stack>
               </Box>
               <Box backgroundColor="white" width={224} height={330} >
-                <Img padding={5} Width="221px" src={auris}></Img>
+                <Img padding={5} width="221px" src={auris}></Img>
                 <Divider />
                 <Stack direction="row" justifyContent="center" alignItems="center" padding={2}>
                   <Text color="blackAlpha.800" fontSize={25}>$5.559</Text>
@@ -186,7 +186,7 @@ function App() {
                 </Stack>
               </Box>
               <Box backgroundColor="white" width={224} height={330} >
-                <Img padding={5} paddingBottom={14} Width="221px" src={tv}></Img>
+                <Img padding={5} paddingBottom={14} width="221px" src={tv}></Img>
                 <Divider />
                 <Stack>
                 <Stack direction="row" justifyContent="center" alignItems="center" padding={2}>
@@ -199,7 +199,7 @@ function App() {
                 </Stack>
               </Box>
               <Box backgroundColor="white" width={224} height={330} >
-                <Img padding={5} Width="221px" src={notebook}></Img>
+                <Img padding={5} width="221px" src={notebook}></Img>
                 <Divider />
                 <Stack direction="row" justifyContent="center" alignItems="center" padding={2}>
                   <Text color="blackAlpha.800" fontSize={25}>$3.863</Text>
@@ -248,7 +248,7 @@ function App() {
 
               <Stack direction="row" width={225} height={75} backgroundColor="white" alignItems="center" justify="center">
                 <Stack direction="row">
-                  <Icon borderRadius={100} back backgroundColor="yellow.400" color= "white" width={10} height={10} as={GiShakingHands}></Icon>
+                  <Icon borderRadius={100}  backgroundColor="yellow.400" color= "white" width={10} height={10} as={GiShakingHands}></Icon>
                 </Stack>
                 <Stack spacing={-2}>
 
