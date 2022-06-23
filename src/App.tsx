@@ -1,5 +1,5 @@
 
-import { Container, Stack, Box,Input,Icon, Img, Text, StackDivider, Divider, Button } from '@chakra-ui/react'
+import { Container, Stack, Box,Input,Icon,Link, Img, Text, StackDivider, Divider, Button } from '@chakra-ui/react'
 import { AiOutlineSearch, AiOutlineShoppingCart, AiFillPlusCircle, AiOutlineCar, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GoLocation} from "react-icons/go";
 import { GiShakingHands, GiSmartphone, GiOldMicrophone, GiSoccerBall, GiModernCity,GiSteeringWheel,GiLipstick, GiTakeMyMoney } from "react-icons/gi";
@@ -14,7 +14,7 @@ import {BsFillCreditCard2BackFill, BsFillCreditCard2FrontFill} from "react-icons
 
 
 import banner from "./assets/banner.jpg";
-import   celu2  from "./assets/celu2.jpg"
+import celu2  from "./assets/celu2.jpg"
 import casco2 from "./assets/casco2.jpg";
 import tv2 from "./assets/tv2.jpg"
 import notebook2 from "./assets/notebook2.jpg"
@@ -34,10 +34,16 @@ function App() {
 
   return (
     
-      <Stack>
-        <Box backgroundColor="#FFF555" paddingY={4}>
+      <Stack maxHeight={{
+        base: '840px',
+        md: '540px',
+        xl: '1400px',
+      }}
+      maxWidth={{base: '1350px',md:'1080px', xl: '2560px'}}
+     >
+        <Box backgroundColor="#FFF555" paddingY={4} >
           <Container alignSelf="center" maxWidth="container.xl" padding={0}>
-            <Stack>
+            <Stack >
               <Stack direction="row"  marginRight={65}>
                 <Stack direction="row" spacing={9} flex={1} >
                   <Box borderRadius={100} width={49} height={41} backgroundColor="blue.700" display="flex" justifyContent="center"  >
@@ -147,9 +153,9 @@ function App() {
           </Stack>
           </Box>
 
-          <Stack>
+          <Stack >
 
-            <Stack direction="row" alignItems="baseline" paddingX={10} spacing={4}>
+            <Stack  direction="row" alignItems="baseline" paddingX={10} spacing={4}>
               <Text fontSize={25} color="blackAlpha.600">Ofertas</Text>
               <Text fontSize={15} color="blue.500">Ver todas</Text>
             </Stack>
@@ -210,7 +216,9 @@ function App() {
 
           </Stack>
 
-          <Stack justifyContent="center" alignItems="center" paddingTop={20}  borderBottomRadius="30px">
+          
+
+          <Stack  justifyContent="center" alignItems="center" paddingTop={20}  borderBottomRadius="30px">
 
           <Stack width={1200} height={425} borderRadius={30} spacing={0}>
 
@@ -287,7 +295,7 @@ function App() {
 
           
 
-          <Stack width={1100} height={400} padding={9} alignItems="flex-start" spacing={4}>
+          <Stack width="100%" height={400} padding={9} alignItems="flex-start" spacing={4}>
             <Stack direction="row" alignItems="baseline">
               <Text fontSize={30} color="blackAlpha.600">
                 Beneficios de Mercado Puntos
@@ -296,14 +304,14 @@ function App() {
                 Ver todos los beneficios
               </Text>
             </Stack>
-            <Stack direction="row" spacing={4}>
+            <Stack  padding="4px" direction="row" spacing={4}>
               <Img borderRadius={15} src={disney} width={400} height={250} ></Img>
               <Img borderRadius={15} src={HBOmax}  width={400} height={250} ></Img>
               <Img borderRadius={15} src={paramount} width={400} height={250} ></Img>
             </Stack>
           </Stack>
 
-          <Stack width="100%" height={400} spacing={6} alignItems="center" padding={2} >
+          <Stack  width="100%" height={400} spacing={6} alignItems="center" padding={2} >
 
             <Stack alignSelf="start" marginLeft={70}>
               <Text color="blackAlpha.600" fontSize={28}>Descubrí</Text>
@@ -342,7 +350,7 @@ function App() {
 
           </Stack>
 
-          <Stack width="100%" height={400} spacing={6} alignItems="center" padding={2} >
+          <Stack  width="100%" height={400} spacing={6} alignItems="center" padding={2} >
 
 
           <Stack alignSelf="start" marginLeft={70}>
@@ -384,7 +392,7 @@ function App() {
 
 
           
-          <Stack alignItems="center" paddingBottom={30}>
+          <Stack  alignItems="center" paddingBottom={30}>
 
           <Stack alignSelf="start" marginLeft={79}>
             <Text color="blackAlpha.600" fontSize={28}>Categorías populares</Text>
@@ -457,24 +465,24 @@ function App() {
             </Stack>
           </Stack>
 
-          <Stack alignItems="center" margin={10}  >
+          <Stack  alignItems="center" margin={10}  >
             
             <Text fontSize={25} color="blackAlpha.700">Contacto</Text>
 
             <Stack borderRadius={100} direction="row" backgroundColor="white" width={900} height={140} alignItems="center" justifyContent="space-around">
               <Stack alignItems="center">
             <Icon _hover={{color: "blue.600"}}  width={45} height={45} as={AiFillGithub}></Icon>
-            <Text  >Git Hub</Text>
+            <Button as={Link} href={`https://github.com/Calvi-Ar`} >Git Hub</Button>
             </Stack>
 
             <Stack alignItems="center">
             <Icon _hover={{color: "blue.600"}} width={45} height={45} as={AiFillLinkedin}></Icon>
-            <Text >Linkedin</Text>
+            <Button as={Link} href={`https://www.linkedin.com/in/alejo-rodrigo-calvi-978487207/`} >Linkedin</Button >
             </Stack>
 
             <Stack alignItems="center">
             <Icon _hover={{color: "blue.600"}}  width={45} height={45} as={FaPlay}></Icon>
-            <Text  >Portfolio</Text>
+            <Button as={Link} href={`https://portfolio-five-neon-13.vercel.app/`} >Portfolio</Button >
             </Stack>
 
             
